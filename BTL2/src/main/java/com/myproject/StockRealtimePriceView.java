@@ -8,6 +8,14 @@ public class StockRealtimePriceView implements StockViewer {
 
     @Override
     public void onUpdate(StockPrice stockPrice) {
-        // TODO: Implement logic to check if price has changed and log it
+        String code = stockPrice.getCode();
+        double avgPrice = stockPrice.getAvgPrice();
+        if (!lastPrices.containsKey(code)) {
+            lastPrices.put(code, avgPrice);
+            Logger.logRealtime(code, avgPrice);
+        } else if (avgPrice != lastPrices.get(code)) {
+            lastPrices.put(code, avgPrice);
+            Logger.logAlert(code, avgPrice);
+        }
     }
 }

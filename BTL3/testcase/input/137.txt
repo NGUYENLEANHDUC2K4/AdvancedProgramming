@@ -1,0 +1,6 @@
+INSERT x number
+BEGIN
+INSERT y string
+ASSIGN y 'hello'
+PRINT
+END

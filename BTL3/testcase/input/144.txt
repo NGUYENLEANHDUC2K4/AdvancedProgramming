@@ -1,0 +1,14 @@
+INSERT x number
+BEGIN
+INSERT x string
+INSERT y string
+ASSIGN x 'hcmut'
+BEGIN
+INSERT z number
+INSERT x number
+ASSIGN z x
+LOOKUP x
+END
+LOOKUP x
+END
+LOOKUP x

@@ -1,0 +1,11 @@
+INSERT x number
+BEGIN
+INSERT y string
+ASSIGN y 'hello'
+BEGIN
+INSERT z number
+ASSIGN z 100
+PRINT
+END
+PRINT
+END

@@ -1,0 +1,10 @@
+INSERT a number
+ASSIGN a 10
+BEGIN
+INSERT b string
+ASSIGN b 'abc'
+BEGIN
+ASSIGN a 15
+INSERT a string
+END
+END

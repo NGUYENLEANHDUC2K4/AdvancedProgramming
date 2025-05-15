@@ -1,0 +1,2 @@
+INSERT str string
+ASSIGN str 'abc cd'

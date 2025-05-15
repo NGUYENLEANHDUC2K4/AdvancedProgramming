@@ -1,0 +1,5 @@
+INSERT o number
+INSERT hcmut string
+ ASSIGN o 100
+ASSIGN hcmut 'hello'
+PRINT

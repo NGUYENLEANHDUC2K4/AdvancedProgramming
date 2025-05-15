@@ -2,9 +2,9 @@
 
 ## Course Information
 
--   **Course**: Advanced Programming (CO2039)
--   **Project**: Real-time Stock Monitoring System
--   **Objective**: Track stock prices in real-time and receive alerts based on predefined conditions.
+- **Course**: Advanced Programming (CO2039)
+- **Project**: Real-time Stock Monitoring System
+- **Objective**: Track stock prices in real-time and receive alerts based on predefined conditions.
 
 ---
 
@@ -36,7 +36,7 @@ This will generate a `.jar` file in `target/`.
 To start real-time stock monitoring:
 
 ```sh
-mvn exec:java -Dexec.mainClass=com.myproject.Main
+mvn exec:java "-Dexec.mainClass=com.myproject.Main"
 ```
 
 Maven automatically handles dependencies and execution.
@@ -82,11 +82,11 @@ Initial Code/
 
 ## Features
 
--   📊 Real-time stock price updates (from `stocks.json`).
--   🔔 Customizable stock alerts based on price thresholds.
--   📡 Fetches stock data dynamically from both **HOSE** and **HNX** exchanges.
--   🕒 Runs on an automated schedule (updates every 10 seconds).
--   🔄 Supports different stock viewers (`Realtime`, `Ticker`, `Alert`).
+- 📊 Real-time stock price updates (from `stocks.json`).
+- 🔔 Customizable stock alerts based on price thresholds.
+- 📡 Fetches stock data dynamically from both **HOSE** and **HNX** exchanges.
+- 🕒 Runs on an automated schedule (updates every 10 seconds).
+- 🔄 Supports different stock viewers (`Realtime`, `Ticker`, `Alert`).
 
 ---
 
@@ -94,19 +94,19 @@ Initial Code/
 
 Students must implement the following classes:
 
--   `HoseAdapter.java`
-    -   Fetches stock data from `HosePriceFetchLib`.
-    -   Implements the `PriceFetcher` interface.
-    -   Converts raw data into `StockPrice` objects.
--   `StockFeeder.java`
-    -   Manages stock price updates.
-    -   Implements the Observer pattern to notify viewers (`StockAlertView`, `StockRealtimePriceView`, `StockTickerView`).
-    -   Supports registering and unregistering stock viewers.
--   `StockAlertView.java`
-    -   Alerts when stock prices go above or below a defined threshold.
-    -   Implements the `StockViewer` interface.
-    -   Uses `Logger.logAlert()` to notify price changes.
--   `StockRealtimePriceView.java`
-    -   Displays real-time stock prices as they update.
-    -   Implements the `StockViewer` interface.
-    -   Uses `Logger.logRealtime()` to print the latest stock price.
+- `HoseAdapter.java`
+  - Fetches stock data from `HosePriceFetchLib`.
+  - Implements the `PriceFetcher` interface.
+  - Converts raw data into `StockPrice` objects.
+- `StockFeeder.java`
+  - Manages stock price updates.
+  - Implements the Observer pattern to notify viewers (`StockAlertView`, `StockRealtimePriceView`, `StockTickerView`).
+  - Supports registering and unregistering stock viewers.
+- `StockAlertView.java`
+  - Alerts when stock prices go above or below a defined threshold.
+  - Implements the `StockViewer` interface.
+  - Uses `Logger.logAlert()` to notify price changes.
+- `StockRealtimePriceView.java`
+  - Displays real-time stock prices as they update.
+  - Implements the `StockViewer` interface.
+  - Uses `Logger.logRealtime()` to print the latest stock price.

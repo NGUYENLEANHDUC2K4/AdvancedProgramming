@@ -1,0 +1,4 @@
+INSERT x number
+INSERT y number
+ASSIGN y 100
+ASSIGN x y
